@@ -1,7 +1,9 @@
-﻿<div class="container-fluid">
+﻿<div class="container-fluid" xmlns="http://www.w3.org/1999/html">
   <div class="row">
     <div class="bg-dark text-white p-2">
-      <span class="navbar-brand ml-2">SPORTS STORE</span>
+      <span class="navbar-brand ml-2">SPORTS STORE
+      <cart-summary></cart-summary>
+      </span>
     </div>
   </div>
   <div class="row text-white">
@@ -26,7 +28,11 @@
                         {{ product.price | currency:"NGN":"symbol":"2.2-2" }}
                     </span>
         </h4>
-        <div class="card-text bg-white p-1">{{product.description}}</div>
+        <div class="card-text bg-white p-1">{{product.description}}
+          <button class="btn btn-success btn-sm float-end"
+                  (click)="addProductsToCart(product)">Add To Cart
+          </button>
+        </div>
       </div>
       <div class="form-inline float-start mr-1">
         <select class="form-control" [value]="productsPerPage"

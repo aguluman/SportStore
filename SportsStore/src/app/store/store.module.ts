@@ -5,11 +5,17 @@ import {ModelModule} from "../model/model.module";
 import {StoreComponent} from "./store.component";
 import {CounterDirective} from "./counter.directive";
 import {CartSummaryComponent} from "./cartSummary.component";
+import {CartDetailComponent} from "./cartDetail.component";
+import {CheckoutComponent} from "./checkout.component";
+import {RouterLink} from "@angular/router"; //The book call it RouterModule, but it is RouterLink I used.
 
 @NgModule({
-  imports: [ModelModule, BrowserModule, FormsModule],
-  declarations: [StoreComponent, CounterDirective, CartSummaryComponent],
-  exports: [StoreComponent]
+  imports: [ModelModule, BrowserModule, FormsModule, RouterLink],
+
+  declarations: [StoreComponent, CounterDirective, CartSummaryComponent,
+    CartDetailComponent, CheckoutComponent],
+
+  exports: [StoreComponent, CartDetailComponent, CheckoutComponent]
 })
 
 export class StoreModule {
