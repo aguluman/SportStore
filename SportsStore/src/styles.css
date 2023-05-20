@@ -6,7 +6,7 @@ html, body {
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "JetBrains Mono Medium", "Helvetica Neue", sans-serif;
 }
 
 mat-toolbar span {
@@ -81,7 +81,7 @@ table[mat-table] .mat-column-buttons {
 }
 
 /*
-table[mat-table] + button[mat-flat-buttton] {
+table[mat-table] + button[mat-flat-button] {
   margin-top: 10px;
 }*/
 
@@ -97,4 +97,43 @@ table[mat-table] + button[mat-flat-buttton] {
 .bottom-box mat-paginator {
   float: right;
   font-size: 14px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-form-field:first-child {
+  margin-top: 20px
+}
+
+form button[mat-flat-button] {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+h3.heading {
+  margin-top: 20px;
+}
+
+mat-checkbox {
+  margin: 10px;
+  font-size: large;
+}
+
+td.no-data {
+  font-size: large;
+}
+
+table.orders tbody, table.orders thead {
+  vertical-align: top;
+}
+
+table.orders td {
+  padding-top: 10px;
+}
+
+table.orders table th:first-of-type, table.orders table td:first-of-type {
+  margin: 0;
+  padding: 0;
 }

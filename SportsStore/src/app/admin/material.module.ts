@@ -8,10 +8,11 @@ import {MatTableModule} from "@angular/material/table";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
+import { MatCheckboxModule } from "@angular/material/checkbox";
 
 
 const features: any[] = [MatToolbarModule, MatSidenavModule, MatIconModule, MatButtonModule,
-  MatDividerModule, MatTableModule, MatPaginatorModule, MatFormFieldModule, MatInputModule];
+  MatDividerModule, MatTableModule, MatPaginatorModule, MatFormFieldModule, MatInputModule, MatCheckboxModule];
 
 @NgModule({
   imports: [features],
