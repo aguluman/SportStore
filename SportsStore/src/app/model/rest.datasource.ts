@@ -14,7 +14,8 @@ export class RestDataSource {
   auth_token?: string;
 
   constructor(private http: HttpClient) {
-    this.baseUrl = `${PROTOCOL}://${location.hostname}:${PORT}/`;
+    //this.baseUrl = `${PROTOCOL}://${location.hostname}:${PORT}/`;
+    this.baseUrl = "/api"
   }
 
   authenticate(user: string, pass: string): Observable<boolean> {
